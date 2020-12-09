@@ -30,13 +30,9 @@ Hello! my name is *{}*.
 
 *Main Available Commands* are Below:
 
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll these mentioned commandsലാം  / Or! Can be used with...\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/sonoflars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """This free project (more info @kavinduaj)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -127,13 +123,13 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(DEVIL_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_USERNAME ),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="📞Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 channel.",url="https://telegram.dog/Mai_bOTs")],  
-                                                [InlineKeyboardButton(text="Creater",url="https://t.me/No_OnE_Kn0wS_Me"),InlineKeyboardButton(text="Mai Source",url="https://github.com/No-OnE-Kn0wS-Me/Filterbot")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
+                                                [[InlineKeyboardButton(text="📞Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Group.",url="https://telegram.dog/cyberwordk")],  
+                                                [InlineKeyboardButton(text="Creater",url="https://t.me/kavinduaj"),InlineKeyboardButton(text=" 💖 Add to me ",url="t.me/filterpro_bot?startgroup=true")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
     else:
          
 
         update.effective_message.reply_text("Heya, How can I help you? 🙂",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" Mai Repo",url="https://github.com/No-OnE-Kn0wS-Me/Filterbot")]]))
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text="About this project",url="https://t.me/kavinduaj")]]))
                                   
 # for test purposes
 def error_callback(bot, update, error):
@@ -361,7 +357,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1131653685 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
