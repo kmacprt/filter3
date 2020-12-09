@@ -21,19 +21,19 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "861055237"
+      "value": "1131653685"
     },
     "START_PHOTTO": {
       "description": "Telegraph img url For Start Cmd",
-      "value": ""
+      "value": "https://telegra.ph/file/44706b57abb809b53c68d.png"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "No_OnE_Kn0wS_Me"
+      "value": "kavinduaj"
     },
     "OWNER_NAME": {
       "description": "Your name",
-      "value": "Hitsuka"
+      "value": "Kavindu AJ"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -45,19 +45,19 @@
     },
     "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
-      "value": "-1007777777777"
+      "value": "-1001367838165"
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "80954677 861055237"
+      "value": "1131653685"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "80954677 861055237"
+      "value": "1131653685"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "80954677 861055237"
+      "value": "1131653685"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
