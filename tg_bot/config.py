@@ -10,13 +10,13 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "1423025003:AAETgsA9zZ4vV1eqbAbB9DHbS8-DBbuuI-w"
+    API_KEY = "1423025003:AAFoeqQp167vO8zMvH4ZHsLzK7sbooXpVms"
     OWNER_ID = "1131653685"  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "kavinduaj"
     OWNER_NAME = "KAVINDU AJ"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgresql://kaj12:dkkajcmd@0951357@postgresql/postgres'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgresql://kmac:dkkaj0123456@postgresql/postgres'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     START_PHOTTO = 'https://telegra.ph/file/44706b57abb809b53c68d.png' # Any img Url To shown In the Start Menu
     LOAD = []
